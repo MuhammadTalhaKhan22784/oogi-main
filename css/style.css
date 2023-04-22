@@ -468,6 +468,9 @@ input[type="text"]:focus {
   .container {
     padding: 0 10px;
   }
+  .footer p {
+    flex-direction: column;
+  }
 }
 .mw300 {
   max-width: 300px;
@@ -2863,10 +2866,18 @@ a.anubis_fn_videobutton:hover .fn__svg,
   align-items: center;
 }
 .footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   font-size: 16px;
   font-family: var(--hff);
   letter-spacing: 0;
+  gap: 20px;
+}
+.footer img {
+  width: 150px;
+  object-fit: contain;
 }
 .footer p a {
   color: #fff;
