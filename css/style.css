@@ -1547,7 +1547,9 @@ svg#logofoot {
 .anubis {
   width: 100%;
   position: relative;
-  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intronubs {
@@ -1984,12 +1986,9 @@ svg#logofoot {
 .fn_cs_slider .slider_top li.active {
   left: 33.3333%;
 }
+
 /* Since v3.0*/
 @media (max-width: 768px) {
-  .anubis img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
   .fn_cs_slider[data-responsive="on"] .slider_top li {
     width: 100%;
   }
@@ -6417,10 +6416,25 @@ a.anubis_fn_videobutton:hover .fn__svg,
   }
 }
 @media (max-width: 480px) {
+  .container {
+    width: 90% !important;
+  }
+  #about2 .fn_cs_shortabout .about_right {
+    min-height: 400px;
+  }
   .anubis_fn_pnb .fn_trigger {
     left: 0;
     margin-left: 0;
     width: 100%;
+  }
+  .fn__gradient_title {
+    font-size: 24px;
+  }
+  .fn_cs_steps.gap .item_in {
+    padding: 20px;
+  }
+  .fn_cs_steps p {
+    font-size: 15px;
   }
   .logo {
     width: 120px;
